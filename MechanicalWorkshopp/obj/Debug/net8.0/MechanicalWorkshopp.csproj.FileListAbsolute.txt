@@ -1,0 +1,14 @@
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\bin\Debug\net8.0\MechanicalWorkshopp.exe
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\bin\Debug\net8.0\MechanicalWorkshopp.deps.json
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\bin\Debug\net8.0\MechanicalWorkshopp.runtimeconfig.json
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\bin\Debug\net8.0\MechanicalWorkshopp.dll
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\bin\Debug\net8.0\MechanicalWorkshopp.pdb
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\MechanicalWorkshopp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\MechanicalWorkshopp.AssemblyInfoInputs.cache
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\MechanicalWorkshopp.AssemblyInfo.cs
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\MechanicalWorkshopp.csproj.CoreCompileInputs.cache
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\MechanicalWorkshopp.dll
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\refint\MechanicalWorkshopp.dll
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\MechanicalWorkshopp.pdb
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\MechanicalWorkshopp.genruntimeconfig.cache
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\ref\MechanicalWorkshopp.dll
