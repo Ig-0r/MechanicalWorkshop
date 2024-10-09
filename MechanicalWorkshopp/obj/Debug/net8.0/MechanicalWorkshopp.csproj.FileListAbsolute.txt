@@ -12,3 +12,4 @@ C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\ne
 C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\MechanicalWorkshopp.pdb
 C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\MechanicalWorkshopp.genruntimeconfig.cache
 C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\ref\MechanicalWorkshopp.dll
+C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\obj\Debug\net8.0\MechanicalWorkshopp.sourcelink.json

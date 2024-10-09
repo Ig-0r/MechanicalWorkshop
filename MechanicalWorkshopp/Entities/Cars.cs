@@ -2,7 +2,7 @@
 
 namespace MechanicalWorkshop.Entities
 {
-    internal class Car
+    internal class Cars
     {
         public string Make { get; set; }
         public string Model { get; set; }        
@@ -10,9 +10,9 @@ namespace MechanicalWorkshop.Entities
         public double Value { get; set; }
         public string Engine { get; set; }
 
-        public Car() { }
+        public Cars() { }
 
-        public Car(string make, string model, int year, double value, string engine)
+        public Cars(string make, string model, int year, double value, string engine)
         {
             Make = make;
             Model = model;

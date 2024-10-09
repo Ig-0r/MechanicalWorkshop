@@ -4,16 +4,16 @@ using MechanicalWorkshop.Repository;
 
 namespace MechanicalWorkshop.Services
 {
-    internal class CarService
+    internal class CarTable
     {
-        public IEnumerable<CarDto> GetCarsDto()
+        public IEnumerable<CarsDto> GetCarsDto()
         {
             var workshopRepository = new WorkshopRepository();
             var cars = workshopRepository.GetCars();
-            var carsDto = new List<CarDto>();
+            var carsDto = new List<CarsDto>();
             foreach (var car in cars)
             {
-                var carDto = new CarDto();
+                var carDto = new CarsDto();
                 carDto.Make = car.Make;
                 carDto.Model = car.Model;
                 carDto.Year = car.Year;

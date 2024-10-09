@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace MechanicalWorkshop.DTO
 {
-    internal class CarDto
+    internal class CarsDto
     {
         public string Make { get; set; }
         public string Model { get; set; }
