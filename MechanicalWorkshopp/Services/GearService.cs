@@ -6,7 +6,7 @@ using System.ComponentModel;
 
 namespace MechanicalWorkshopp.Services
 {
-    internal class GearTable
+    internal class GearService
     {
         public IEnumerable<GearsDto> GetGearsDto()
         {

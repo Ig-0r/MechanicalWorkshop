@@ -4,7 +4,7 @@ using MechanicalWorkshop.Repository;
 
 namespace MechanicalWorkshop.Services
 {
-    internal class CarTable
+    internal class CarService
     {
         public IEnumerable<CarsDto> GetCarsDto()
         {

@@ -39,5 +39,22 @@ namespace MechanicalWorkshop.Repository
 
             return gears;
         }
+
+        public IEnumerable<MechanicalWork> GetMechanicalWork()
+        {
+            var mWork = new List<MechanicalWork>();
+            string path = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\mechanicalServicesDB.txt";
+
+            using (StreamReader sr = File.OpenText(path))
+            {
+                while (!sr.EndOfStream)
+                {
+                    string[] line = sr.ReadLine().Split(';');
+                    mWork.Add(new MechanicalWork(int.Parse(line[0]), line[1], double.Parse(line[2])));
+                }
+            }
+
+            return mWork;
+        }
     }
 }

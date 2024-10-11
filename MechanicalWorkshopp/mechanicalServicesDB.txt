@@ -1,0 +1,4 @@
+0001;Motor parcial;500,00
+0002;Motor completo;900,00
+0003;Embreagem;300,00
+0004;Caixa de marcha completo;550,00
