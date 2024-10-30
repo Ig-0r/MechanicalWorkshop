@@ -10,7 +10,10 @@ namespace MechanicalWorkshop.Repository
         public IEnumerable<Cars> GetCars()
         {
             var cars = new List<Cars>();
-            string path = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\carDB.txt";
+            string directory = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp";
+            string path = Path.Combine(directory, "carDB.txt");
+
+            Directory.SetCurrentDirectory(directory);
 
             using (StreamReader sr = File.OpenText(path))
             {
@@ -26,7 +29,10 @@ namespace MechanicalWorkshop.Repository
         public IEnumerable<Gears> GetGears()
         {
             var gears = new List<Gears>();
-            string path = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\GearDB.txt";
+            string directory = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp";
+            string path = Path.Combine(directory, "GearDB.txt");
+            
+            Directory.SetCurrentDirectory(directory);
 
             using (StreamReader sr = File.OpenText(path))
             {
@@ -43,7 +49,10 @@ namespace MechanicalWorkshop.Repository
         public IEnumerable<MechanicalWork> GetMechanicalWork()
         {
             var mWork = new List<MechanicalWork>();
-            string path = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp\mechanicalServicesDB.txt";
+            string directory = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp";
+            string path = Path.Combine(directory, "mechanicalServicesDB.txt");
+            
+            Directory.SetCurrentDirectory(directory);
 
             using (StreamReader sr = File.OpenText(path))
             {
@@ -53,7 +62,7 @@ namespace MechanicalWorkshop.Repository
                     mWork.Add(new MechanicalWork(int.Parse(line[0]), line[1], double.Parse(line[2])));
                 }
             }
-
+            
             return mWork;
         }
     }

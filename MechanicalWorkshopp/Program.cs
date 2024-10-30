@@ -6,34 +6,43 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var carTable = new CarService();
-        var carsDto = carTable.GetCarsDto();
-
-        foreach (var car in carsDto) 
-        {
-            Console.WriteLine(car.CarInfo());
-        }
+        Console.WriteLine("                                       _________________________________");
+        Console.WriteLine("                                      | WELCOME TO MECHANICAL WORKSHOP! |");
+        Console.WriteLine("                                       ---------------------------------");
         Console.WriteLine();
-        Console.WriteLine("GearsInfo:");
-        var gearTable = new GearService();
-        var gearsDto = gearTable.GetGearsDto();
+        Console.WriteLine("Which action below you want to execute?");
+        Console.WriteLine("1: Register");
+        Console.WriteLine("2: Add");
+        Console.WriteLine("3: Remove");
+        Console.WriteLine("4: Search");
+        Console.WriteLine("5: Close the program");
 
-        foreach (var gear in gearsDto)
+        ConsoleKeyInfo n = Console.ReadKey();
+
+        switch (n.KeyChar)
         {
-            Console.WriteLine(gear.GearInfo());
+            case '1':
+                Console.Clear();
+
+                break;
+            case '2':
+                Console.Clear();
+
+                break;
+            case '3':
+                Console.Clear();
+
+                break;
+            case '4':
+                Console.Clear();
+
+                break;
+            case '5':
+                Console.Clear();
+
+                break;
+
+
         }
-
-        Console.WriteLine();
-        Console.WriteLine("Services Info:");
-        var service = new MechanicalWorkService();
-        var n = service.GetMechanicalWorkDto();
-
-        foreach (var t in n)
-        {
-            Console.WriteLine(t.mWorkInfo());
-
-        }
-        
-
     }
 }
