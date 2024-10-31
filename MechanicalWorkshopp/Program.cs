@@ -1,6 +1,7 @@
 ﻿
 using MechanicalWorkshop.Services;
 using MechanicalWorkshopp.Services;
+using static System.Net.Mime.MediaTypeNames;
 
 internal class Program
 {
@@ -10,12 +11,11 @@ internal class Program
         Console.WriteLine("                                      | WELCOME TO MECHANICAL WORKSHOP! |");
         Console.WriteLine("                                       ---------------------------------");
         Console.WriteLine();
-        Console.WriteLine("Which action below you want to execute?");
-        Console.WriteLine("1: Register");
-        Console.WriteLine("2: Add");
-        Console.WriteLine("3: Remove");
-        Console.WriteLine("4: Search");
-        Console.WriteLine("5: Close the program");
+        Console.WriteLine("Choose an option below to execute:");
+        Console.WriteLine("1: Open cars menu");
+        Console.WriteLine("2: Open services menu");
+        Console.WriteLine("3: Open gears menu");
+        Console.WriteLine("4: End program");      
 
         ConsoleKeyInfo n = Console.ReadKey();
 
@@ -23,26 +23,67 @@ internal class Program
         {
             case '1':
                 Console.Clear();
+                Console.WriteLine("Which action below you want to execute?");
+                Console.WriteLine("1: Show cars already registered");
+                Console.WriteLine("2: Register a new car");
+                Console.WriteLine("3: Delet a car");
+                ConsoleKeyInfo r = Console.ReadKey();
+                if (r.KeyChar == '1')
+                {
+                    Console.Clear();
 
+                    Console.WriteLine("Cars list:");
+                    var carService = new CarService();
+                    var carsDto = carService.GetCarsDto();
+
+                    foreach (var car in carsDto)
+                    {
+                        Console.WriteLine(car.CarInfo());
+                    }
+                }
+                else if (r.KeyChar == '2')
+                {
+                    Console.Clear();
+                }
+                else if (r.KeyChar == '3')
+                {
+
+                }              
                 break;
+
             case '2':
-                Console.Clear();
+                Console.Clear();                
+                Console.WriteLine("Which action below you want to execute?");
+                Console.WriteLine("1: Show parts already registered");
+                Console.WriteLine("2: Register a new part");
+                Console.WriteLine("3: Delet a part");
 
+                ConsoleKeyInfo t = Console.ReadKey();
+
+                if (t.KeyChar == '1')
+                {
+
+                }
+                else if (t.KeyChar == '2')
+                { 
+                
+                }
+                else if (t.KeyChar == '3')
+                {
+                    Console.WriteLine();
+                }
                 break;
+
             case '3':
                 Console.Clear();
 
                 break;
+
             case '4':
                 Console.Clear();
-
+                Environment.Exit(0);
                 break;
-            case '5':
-                Console.Clear();
-
-                break;
-
-
+            
         }
     }
 }
