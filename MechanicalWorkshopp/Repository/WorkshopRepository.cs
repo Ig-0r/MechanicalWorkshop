@@ -10,10 +10,9 @@ namespace MechanicalWorkshop.Repository
         public IEnumerable<Cars> GetCars()
         {
             var cars = new List<Cars>();
-            string directory = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp";
-            string path = Path.Combine(directory, "carDB.txt");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "carDB.txt");
 
-            Directory.SetCurrentDirectory(directory);
+            Directory.SetCurrentDirectory(Directory.GetCurrentDirectory());
 
             using (StreamReader sr = File.OpenText(path))
             {
@@ -29,10 +28,9 @@ namespace MechanicalWorkshop.Repository
         public IEnumerable<Gears> GetGears()
         {
             var gears = new List<Gears>();
-            string directory = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp";
-            string path = Path.Combine(directory, "GearDB.txt");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "GearDB.txt");
             
-            Directory.SetCurrentDirectory(directory);
+            Directory.SetCurrentDirectory(Directory.GetCurrentDirectory());
 
             using (StreamReader sr = File.OpenText(path))
             {
@@ -49,10 +47,9 @@ namespace MechanicalWorkshop.Repository
         public IEnumerable<MechanicalWork> GetMechanicalWork()
         {
             var mWork = new List<MechanicalWork>();
-            string directory = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp";
-            string path = Path.Combine(directory, "mechanicalServicesDB.txt");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "mechanicalServicesDB.txt");
             
-            Directory.SetCurrentDirectory(directory);
+            Directory.SetCurrentDirectory(Directory.GetCurrentDirectory());
 
             using (StreamReader sr = File.OpenText(path))
             {
