@@ -1,4 +1,5 @@
 ﻿
+using MechanicalWorkshop.Repository;
 using MechanicalWorkshop.Services;
 using MechanicalWorkshopp.Services;
 using static System.Net.Mime.MediaTypeNames;
@@ -44,6 +45,11 @@ internal class Program
                 else if (r.KeyChar == '2')
                 {
                     Console.Clear();
+                    Console.WriteLine("Write the make, model, year, value and engine below, separated by \";\" respectively:");
+                    string[] line = Console.ReadLine().Split(';');
+                    var verify = new WorkshopRepository();
+                    verify.RegisterCars(line[0], (line[1]), int.Parse(line[2]), int.Parse(line[3]), line[4]);
+                    
                 }
                 else if (r.KeyChar == '3')
                 {

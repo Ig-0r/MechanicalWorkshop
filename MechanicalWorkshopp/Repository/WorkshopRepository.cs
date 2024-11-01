@@ -2,6 +2,7 @@
 using System.Globalization;
 using MechanicalWorkshop.Entities;
 using MechanicalWorkshopp.Entities;
+using MechanicalWorkshop.DTO;
 
 namespace MechanicalWorkshop.Repository
 {
@@ -64,6 +65,36 @@ namespace MechanicalWorkshop.Repository
             }
             
             return mWork;
+        }
+        public IEnumerable<Cars> RegisterCars(string make, string model, int year, double value, string engine)
+        {
+            var cars = new List<Cars>();
+            var test = new List<Cars>();
+            test.Add(new Cars(make, model, year, value, engine));
+            string directory = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp";
+            string path = Path.Combine(directory, "carDB.txt");
+
+            Directory.SetCurrentDirectory(directory);
+
+            using (StreamReader sr = File.OpenText(path))
+            {
+                while (!sr.EndOfStream)
+                {
+                    string[] line = sr.ReadLine().Split(';');
+                    cars.Add(new Cars(line[0], (line[1]), int.Parse(line[2]), int.Parse(line[3]), line[4]));
+                    bool verify = test.Equals(cars);
+                    if (verify == true)
+                    {
+                        throw new Exception("This car is already registered");
+                    }
+                    else if (verify == false) 
+                    {
+                        cars.Add(new Cars(make, model, year, value, engine));
+                    }                                        
+                }
+            }
+
+            return cars;
         }
     }
 }
