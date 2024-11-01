@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ntzzy\\source\\repos\\MechanicalWorkshopp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|c:\\users\\ntzzy\\source\\repos\\mechanicalworkshopp\\mechanicalworkshopp\\entities\\gears.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|solutionrelative:mechanicalworkshopp\\entities\\gears.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|c:\\users\\ntzzy\\source\\repos\\mechanicalworkshopp\\mechanicalworkshopp\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|solutionrelative:mechanicalworkshopp\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|c:\\users\\ntzzy\\source\\repos\\mechanicalworkshopp\\mechanicalworkshopp\\repository\\workshoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|solutionrelative:mechanicalworkshopp\\repository\\workshoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|c:\\users\\ntzzy\\source\\repos\\mechanicalworkshopp\\mechanicalworkshopp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|solutionrelative:mechanicalworkshopp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|c:\\users\\ntzzy\\source\\repos\\mechanicalworkshopp\\mechanicalworkshopp\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|solutionrelative:mechanicalworkshopp\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|c:\\users\\ntzzy\\source\\repos\\mechanicalworkshopp\\mechanicalworkshopp\\dto\\carsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|c:\\users\\ntzzy\\source\\repos\\mechanicalworkshopp\\mechanicalworkshopp\\dto\\mechanicalworkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|solutionrelative:mechanicalworkshopp\\dto\\mechanicalworkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|c:\\users\\ntzzy\\source\\repos\\mechanicalworkshopp\\mechanicalworkshopp\\entities\\gears.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|solutionrelative:mechanicalworkshopp\\entities\\gears.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13C0928D-0704-45A3-BAC2-94709A60BCE9}|MechanicalWorkshopp\\MechanicalWorkshopp.csproj|c:\\users\\ntzzy\\source\\repos\\mechanicalworkshopp\\mechanicalworkshopp\\services\\mechanicalworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CarsDto.cs",
               "DocumentMoniker": "C:\\Users\\ntzzy\\source\\repos\\MechanicalWorkshopp\\MechanicalWorkshopp\\Dto\\CarsDto.cs",
               "RelativeDocumentMoniker": "MechanicalWorkshopp\\Dto\\CarsDto.cs",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Cars.cs",
               "DocumentMoniker": "C:\\Users\\ntzzy\\source\\repos\\MechanicalWorkshopp\\MechanicalWorkshopp\\Entities\\Cars.cs",
               "RelativeDocumentMoniker": "MechanicalWorkshopp\\Entities\\Cars.cs",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MechanicalWorkDto.cs",
               "DocumentMoniker": "C:\\Users\\ntzzy\\source\\repos\\MechanicalWorkshopp\\MechanicalWorkshopp\\Dto\\MechanicalWorkDto.cs",
               "RelativeDocumentMoniker": "MechanicalWorkshopp\\Dto\\MechanicalWorkDto.cs",
@@ -142,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Gears.cs",
               "DocumentMoniker": "C:\\Users\\ntzzy\\source\\repos\\MechanicalWorkshopp\\MechanicalWorkshopp\\Entities\\Gears.cs",
               "RelativeDocumentMoniker": "MechanicalWorkshopp\\Entities\\Gears.cs",
@@ -150,11 +150,12 @@
               "RelativeToolTip": "MechanicalWorkshopp\\Entities\\Gears.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T00:43:35.635Z"
+              "WhenOpened": "2024-10-09T00:43:35.635Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CarService.cs",
               "DocumentMoniker": "C:\\Users\\ntzzy\\source\\repos\\MechanicalWorkshopp\\MechanicalWorkshopp\\Services\\CarService.cs",
               "RelativeDocumentMoniker": "MechanicalWorkshopp\\Services\\CarService.cs",
@@ -162,11 +163,12 @@
               "RelativeToolTip": "MechanicalWorkshopp\\Services\\CarService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T00:19:08.346Z"
+              "WhenOpened": "2024-10-03T00:19:08.346Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "WorkshopRepository.cs",
               "DocumentMoniker": "C:\\Users\\ntzzy\\source\\repos\\MechanicalWorkshopp\\MechanicalWorkshopp\\Repository\\WorkshopRepository.cs",
               "RelativeDocumentMoniker": "MechanicalWorkshopp\\Repository\\WorkshopRepository.cs",
@@ -179,15 +181,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ntzzy\\source\\repos\\MechanicalWorkshopp\\MechanicalWorkshopp\\Program.cs",
               "RelativeDocumentMoniker": "MechanicalWorkshopp\\Program.cs",
               "ToolTip": "C:\\Users\\ntzzy\\source\\repos\\MechanicalWorkshopp\\MechanicalWorkshopp\\Program.cs",
               "RelativeToolTip": "MechanicalWorkshopp\\Program.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAgwDIAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDIAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T00:14:46.142Z"
+              "WhenOpened": "2024-10-03T00:14:46.142Z",
+              "EditorCaption": ""
             }
           ]
         }
