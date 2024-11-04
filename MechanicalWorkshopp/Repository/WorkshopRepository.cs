@@ -68,12 +68,9 @@ namespace MechanicalWorkshop.Repository
             var cars = new List<Cars>();
             var test = new List<Cars>();
             test.Add(new Cars(make, model, year, value, engine));
-            string directory = @"C:\Users\ntzzy\source\repos\MechanicalWorkshopp\MechanicalWorkshopp";
-            string path = Path.Combine(directory, "carDB.txt");
+            string directory = Path.Combine(Directory.GetCurrentDirectory(), "carDB.txt");
 
-            Directory.SetCurrentDirectory(directory);
-
-            using (StreamReader sr = File.OpenText(path))
+            using (StreamReader sr = File.OpenText(directory))
             {
                 while (!sr.EndOfStream)
                 {
