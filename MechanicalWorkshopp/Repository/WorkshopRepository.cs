@@ -19,8 +19,8 @@ namespace MechanicalWorkshop.Repository
             {
                 while (!sr.EndOfStream)
                 {
-                    string[] line = sr.ReadLine().Split(';') ;
-                    cars.Add(new Cars(line[0],(line[1]), int.Parse(line[2]), int.Parse(line[3]), line[4]));
+                    string[] line = sr.ReadLine().Split(';');
+                    cars.Add(new Cars(line[0], (line[1]), int.Parse(line[2]), int.Parse(line[3]), line[4]));
                 }
             }
 
@@ -30,7 +30,7 @@ namespace MechanicalWorkshop.Repository
         {
             var gears = new List<Gears>();
             string path = Path.Combine(Directory.GetCurrentDirectory(), "GearDB.txt");
-            
+
             Directory.SetCurrentDirectory(Directory.GetCurrentDirectory());
 
             using (StreamReader sr = File.OpenText(path))
@@ -38,7 +38,7 @@ namespace MechanicalWorkshop.Repository
                 while (!sr.EndOfStream)
                 {
                     string[] line = sr.ReadLine().Split(';');
-                    gears.Add(new Gears(int.Parse(line[0]), line[1], int.Parse(line[2]), double.Parse(line[3]))); 
+                    gears.Add(new Gears(int.Parse(line[0]), line[1], int.Parse(line[2]), double.Parse(line[3])));
                 }
             }
 
@@ -49,7 +49,7 @@ namespace MechanicalWorkshop.Repository
         {
             var mWork = new List<MechanicalWork>();
             string path = Path.Combine(Directory.GetCurrentDirectory(), "mechanicalServicesDB.txt");
-            
+
             Directory.SetCurrentDirectory(Directory.GetCurrentDirectory());
 
             using (StreamReader sr = File.OpenText(path))
@@ -60,35 +60,45 @@ namespace MechanicalWorkshop.Repository
                     mWork.Add(new MechanicalWork(int.Parse(line[0]), line[1], double.Parse(line[2])));
                 }
             }
-            
+
             return mWork;
         }
-        public IEnumerable<Cars> RegisterCars(string make, string model, int year, double value, string engine)
+
+        public void RegisterCars(string make, string model, int year, double value, string engine)
         {
             var cars = new List<Cars>();
-            var test = new List<Cars>();
-            test.Add(new Cars(make, model, year, value, engine));
-            string directory = Path.Combine(Directory.GetCurrentDirectory(), "carDB.txt");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "carDB.txt");
 
-            using (StreamReader sr = File.OpenText(directory))
+            using (StreamReader sr = File.OpenText(path))
             {
                 while (!sr.EndOfStream)
                 {
                     string[] line = sr.ReadLine().Split(';');
-                    cars.Add(new Cars(line[0], (line[1]), int.Parse(line[2]), int.Parse(line[3]), line[4]));
-                    bool verify = test.Equals(cars);
-                    if (verify == true)
-                    {
-                        throw new Exception("This car is already registered");
-                    }
-                    else if (verify == false) 
-                    {
-                        cars.Add(new Cars(make, model, year, value, engine));
-                    }                                        
+                    cars.Add(new Cars(line[0], line[1], int.Parse(line[2]), double.Parse(line[3]), line[4]));
+                }
+            }
+            bool test = false;
+
+            foreach (var car in cars)
+            {
+                if (car.Make == make && car.Model == model && car.Year == year && car.Value == value && car.Engine == engine)
+                {
+                    test = true;                
                 }
             }
 
-            return cars;
+            if (test == true)
+            {
+                throw new Exception("This car is already registered.");
+            }
+            else
+            {                
+                using (StreamWriter sw = new StreamWriter(path, true))
+                {
+                    sw.WriteLine($"{make};{model};{year};{value};{engine}");
+                }
+            }
         }
     }
 }
+
