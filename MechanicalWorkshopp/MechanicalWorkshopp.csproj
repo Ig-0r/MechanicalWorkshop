@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Update="carDB.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="GearDB.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

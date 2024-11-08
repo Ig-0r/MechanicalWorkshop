@@ -96,6 +96,7 @@ namespace MechanicalWorkshop.Repository
                 using (StreamWriter sw = new StreamWriter(path, true))
                 {
                     sw.WriteLine($"{make};{model};{year};{value};{engine}");
+                    
                 }
             }
         }
